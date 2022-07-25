@@ -28,6 +28,7 @@ Angular actualiza sólo los elementos del HTML que necesitan ser actualizados, n
 
 ### Directiva estructurales
 ----
+Necesario importar `CommonModule`
 
 #### ngFor
 #### ngIf
