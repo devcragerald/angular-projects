@@ -22,3 +22,6 @@ Muchas de las herramientas dentro del proyecto de Angular no van al bundle por l
 
     - Módulos: agrupa los bloques, incluso otros módulos
 
+----
+
+Angular actualiza sólo los elementos del HTML que necesitan ser actualizados, no actualiza todos ya que es capaz de ver qué elementos son los que han sufrido cambios y actualizarlos por el **One Way Data Binding**
