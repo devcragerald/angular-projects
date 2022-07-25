@@ -4,7 +4,8 @@
     <li *ngFor="let heroe of heroes"> {{heroe}}</li>
 </ul>
 
-<h3>Dead Hero:</h3>
-<span> {{deadHero}} </span>
+<div *ngIf="deadHero">
+    <h3>Dead Hero: <small>{{deadHero}}</small> </h3>
+</div>
 
 <button type="button" (click)="deleteHero()"> Borrar Hero</button>

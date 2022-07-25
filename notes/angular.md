@@ -30,3 +30,4 @@ Angular actualiza sólo los elementos del HTML que necesitan ser actualizados, n
 ----
 
 #### ngFor
+#### ngIf
