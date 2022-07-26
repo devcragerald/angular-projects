@@ -32,3 +32,9 @@ Necesario importar `CommonModule`
 
 #### ngFor
 #### ngIf
+
+### Data binding
+----
+
+#### [] One way Data binding
+    - Indica que el valor de la propiedad del elemento HTML será un valor del componente
