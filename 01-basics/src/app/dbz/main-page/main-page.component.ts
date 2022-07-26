@@ -16,8 +16,12 @@ export class MainPageComponent {
     power: 14000
   }
 
+  changeName(event: any) {
+    console.log(event.target.value);
+  }
+
   add(): void {
     // event.preventDefault();
-    console.log('heyy');
+    console.log(this.newCharacter);
   }
 }
