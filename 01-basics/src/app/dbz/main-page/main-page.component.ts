@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-
-interface Character {
-  name: string,
-  power: number
-}
+import { Character } from '../interface/character.interface';
 
 @Component({
   selector: 'app-main-page',
@@ -23,23 +19,27 @@ export class MainPageComponent {
     }
   ]
 
-  newCharacter: Character = {
-    name: '',
-    power: 0
-  }
+  // newCharacter: Character = {
+  //   name: '',
+  //   power: 0
+  // }
 
   changeName(event: any) {
     console.log(event.target.value);
   }
 
-  add(): void {
-    // event.preventDefault();
-    if (this.newCharacter.name.trim().length === 0) { return;}
-    this.characters.push(this.newCharacter);
-    this.newCharacter = {
-      name: '',
-      power: 0
-    }
-    console.log(this.newCharacter);
+  // add(): void {
+  //   // event.preventDefault();
+  //   if (this.newCharacter.name.trim().length === 0) { return;}
+  //   this.characters.push(this.newCharacter);
+  //   this.newCharacter = {
+  //     name: '',
+  //     power: 0
+  //   }
+  //   console.log(this.newCharacter);
+  // }
+
+  addCharacter(event: Character) {
+    this.characters.push(event);
   }
 }
