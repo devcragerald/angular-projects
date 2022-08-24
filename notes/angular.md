@@ -22,3 +22,22 @@ Muchas de las herramientas dentro del proyecto de Angular no van al bundle por l
 
     - Módulos: agrupa los bloques, incluso otros módulos
 
+Angular actualiza sólo los elementos del HTML que necesitan ser actualizados, no actualiza todos ya que es capaz de ver qué elementos son los que han sufrido cambios y actualizarlos por el **One Way Data Binding**
+
+**En el HTML se usa `()` para emitir/escuchar eventos**
+
+### Directiva estructurales
+----
+Necesario importar `CommonModule`
+
+#### ngFor
+#### ngIf
+
+### Data binding
+----
+
+#### [] One way Data binding
+    - Indica que el valor de la propiedad del elemento HTML será un valor del componente
+
+#### [ () ] Two way Data binding
+    - Obtiene el valor de la clase y desde el HTML se puede modificar
