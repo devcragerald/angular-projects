@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Character } from '../interface/character.interface';
+import { DbzService } from '../services/dbz.service';
 
 @Component({
   selector: 'app-main-page',
@@ -7,26 +8,10 @@ import { Character } from '../interface/character.interface';
 })
 export class MainPageComponent {
 
-
-  characters: Character[] = [
-    {
-      name: 'Goku',
-      power: 15000
-    },
-    {
-      name: 'Vegeta',
-      power: 14000
-    }
-  ]
-
   // newCharacter: Character = {
   //   name: '',
   //   power: 0
   // }
-
-  changeName(event: any) {
-    console.log(event.target.value);
-  }
 
   // add(): void {
   //   // event.preventDefault();
@@ -39,7 +24,13 @@ export class MainPageComponent {
   //   console.log(this.newCharacter);
   // }
 
-  addCharacter(event: Character) {
-    this.characters.push(event);
+  // characters: Character[] = [];
+
+  // addCharacter(event: Character) {
+  //   this.characters.push(event);
+  // }
+
+  constructor(private dbzService: DbzService) {
+    // this.characters = this.dbzService.characters;
   }
 }
