@@ -1,0 +1,14 @@
+<p>list works!</p>
+
+<ul>
+    <li *ngFor="let heroe of heroes"> {{heroe}}</li>
+</ul>
+
+<div *ngIf="deadHero; else noDead">
+    <h3>Dead Hero: <small>{{deadHero}}</small> </h3>
+</div>
+<ng-template #noDead>
+    <h3>No dead</h3>
+</ng-template>
+
+<button type="button" (click)="deleteHero()"> Borrar Hero</button>
